@@ -1,4 +1,5 @@
-FROM almalinux:9
+ARG version
+FROM almalinux:${version:-9}
 ENV course="DevSecOps with AWS" \
     author="chouda reddy" \
     duration="3 months"
